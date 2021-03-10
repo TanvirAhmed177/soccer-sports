@@ -1,6 +1,6 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col } from "react-bootstrap";
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./League.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

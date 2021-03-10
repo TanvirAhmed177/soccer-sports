@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 import "./LeagueInfo.css";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
