@@ -112,13 +112,13 @@ const LeagueInfo = (props) => {
         </small>
       </p>
 
-      <Link to={`/${strFacebook}`}>
+      <Link to={strFacebook}>
         <FontAwesomeIcon className="icon mr-2" icon={faFacebook} />
       </Link>
-      <Link to={`/${strTwitter}`}>
+      <Link to={strTwitter}>
         <FontAwesomeIcon className="icon mr-2" icon={faTwitter} />
       </Link>
-      <Link to={`/${strYoutube}`}>
+      <Link to={strYoutube}>
         <FontAwesomeIcon className="icon mr-2" icon={faYoutube} />
       </Link>
     </Container>
