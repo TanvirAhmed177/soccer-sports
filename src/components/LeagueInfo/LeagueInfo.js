@@ -58,25 +58,25 @@ const LeagueInfo = (props) => {
         </Col>
       </Row>
       <Row className=" mx-md-auto mx-sm-auto mx-auto">
-        <Col className="col-lg-12 col-12 col-sm-12 col-md-12 align-items-center">
+        <Col className="col-lg-12 col-12 col-sm-12 col-md-12 ">
           <Card
             className="d-lg-flex flex-lg-row  mx-auto m-5 p-3  "
             style={{ color: "#603F83FF", backgroundColor: "#C7D3D4FF" }}
           >
             {strGender === "Male" ? (
               <Card.Img
-                className="col-lg-6 col-12 col-sm-12 col-md-12 mx-md-auto mx-sm-auto mx-auto"
+                className="col-lg-6 col-12 col-sm-12 col-md-12 "
                 variant="top"
                 src={strFanart2}
               />
             ) : (
               <Card.Img
-                className="col-lg-6 col-12 col-sm-12 col-md-12 mx-md-auto mx-sm-auto mx-auto"
+                className="col-lg-6 col-12 col-sm-12 col-md-12 "
                 variant="top"
                 src={strFanart4}
               />
             )}
-            <Card.Body className="col-lg-6 col-12 col-sm-12 col-md-12 mx-md-auto mx-sm-auto mx-auto">
+            <Card.Body className="col-lg-6 col-12 col-sm-12 col-md-12 ">
               <Card.Title>{strLeague}</Card.Title>
 
               <Card.Text>

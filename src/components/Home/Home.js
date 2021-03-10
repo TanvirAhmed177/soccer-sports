@@ -21,8 +21,8 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Soccer Sports</h1>
-      <Container className="container">
-        <Row>
+      <Container className="container ">
+        <Row className="mx-md-auto mx-sm-auto mx-auto justify-content: center;">
           {leagueData.map((lg) => (
             <League league={lg}></League>
           ))}
