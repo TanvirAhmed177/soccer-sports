@@ -14,7 +14,7 @@ const League = (props) => {
   return (
     <Col
       style={{ color: "#603F83FF", backgroundColor: "#C7D3D4FF" }}
-      className=" border border-info m-lg-4 ml-lg-5 m-1 m-sm-2 m-md-3 p-lg-4 p-1 p-sm-2 p-md-3 col-lg-3 col-6 col-sm-8 col-md-4 "
+      className=" border border-info m-lg-4 ml-lg-5 m-1 m-sm-2 m-md-3 p-lg-4 p-1 p-sm-2 p-md-3 col-lg-3 col-6 col-sm-8 col-md-4"
     >
       <h3>{strLeague}</h3>
       <p>{strLeagueAlternate}</p>
