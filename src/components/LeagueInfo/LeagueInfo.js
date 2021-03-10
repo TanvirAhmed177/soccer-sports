@@ -18,7 +18,6 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
 
 const LeagueInfo = (props) => {
   const { idLeague } = useParams();
