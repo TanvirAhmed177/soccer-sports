@@ -1,0 +1,8 @@
+.home h1 {
+  padding: 60px 0px;
+  background-image: url(/src/images/pexels-riccardo-bresciani-41257.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #c7d3d4ff;
+}

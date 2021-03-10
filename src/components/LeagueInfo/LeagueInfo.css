@@ -1,0 +1,20 @@
+.bg-img {
+  background-image: url(/src/images/pexels-riccardo-bresciani-41257.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 20px;
+}
+.info small {
+  color: rgb(136, 112, 161);
+
+  padding: 2px;
+  text-align: center;
+}
+.info a .icon {
+  color: rgb(118, 94, 143);
+  height: 60px;
+  width: 40px;
+  margin: 20px;
+}
