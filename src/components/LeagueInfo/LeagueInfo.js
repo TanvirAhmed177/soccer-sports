@@ -12,12 +12,14 @@ import {
   faFutbol,
   faMars,
   faGlobe,
+  faRss,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { femaleImg } from "../../images/female.png";
 
 const LeagueInfo = (props) => {
   const { idLeague } = useParams();
@@ -29,13 +31,14 @@ const LeagueInfo = (props) => {
     strSport,
     strLeague,
     strBadge,
+    strBanner,
     strFanart2,
-    strFanart4,
     strDescriptionEN,
     strFacebook,
     strTwitter,
     strYoutube,
     strWebsite,
+    strRSS,
   } = leagueInfo;
   useEffect(() => {
     const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${idLeague}`;
@@ -51,16 +54,21 @@ const LeagueInfo = (props) => {
       <Row className="bg-img">
         <Col>
           <img
-            className="col-lg-3 col-3 col-sm-3 col-md-3"
+            className="col-lg-3 col-3 col-sm-3 col-md-3 "
             src={strBadge}
+            alt=""
+          />
+          <img
+            className="col-lg-6 col-6 col-sm-6 col-md-6"
+            src={strBanner}
             alt=""
           />
         </Col>
       </Row>
       <Row className=" mx-md-auto mx-sm-auto mx-auto">
-        <Col className="col-lg-12 col-12 col-sm-12 col-md-12 ">
+        <Col className="col-lg-12 col-12 col-sm-12 col-md-12">
           <Card
-            className="d-lg-flex flex-lg-row  mx-auto m-5 p-3  "
+            className="d-lg-flex flex-lg-row  mx-auto m-5 p-3"
             style={{ color: "#603F83FF", backgroundColor: "#C7D3D4FF" }}
           >
             {strGender === "Male" ? (
@@ -68,12 +76,14 @@ const LeagueInfo = (props) => {
                 className="col-lg-6 col-12 col-sm-12 col-md-12 "
                 variant="top"
                 src={strFanart2}
+                alt="Male-Image"
               />
             ) : (
               <Card.Img
                 className="col-lg-6 col-12 col-sm-12 col-md-12 "
                 variant="top"
-                src={strFanart4}
+                src={femaleImg}
+                alt="Female-Image"
               />
             )}
             <Card.Body className="col-lg-6 col-12 col-sm-12 col-md-12 ">
@@ -119,6 +129,9 @@ const LeagueInfo = (props) => {
       </a>
       <a href={`https://${strYoutube}`}>
         <FontAwesomeIcon className="icon mr-2" icon={faYoutube} />
+      </a>
+      <a href={`https://${strRSS}`}>
+        <FontAwesomeIcon className="icon mr-2 p-1" icon={faRss} />
       </a>
     </Container>
   );
