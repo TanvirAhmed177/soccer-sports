@@ -19,7 +19,6 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { femaleImg } from "../../images/female.png";
 
 const LeagueInfo = (props) => {
   const { idLeague } = useParams();
@@ -33,6 +32,7 @@ const LeagueInfo = (props) => {
     strBadge,
     strBanner,
     strFanart2,
+    strFanart4,
     strDescriptionEN,
     strFacebook,
     strTwitter,
@@ -82,7 +82,7 @@ const LeagueInfo = (props) => {
               <Card.Img
                 className="col-lg-6 col-12 col-sm-12 col-md-12 "
                 variant="top"
-                src={femaleImg}
+                src={strFanart4}
                 alt="Female-Image"
               />
             )}
